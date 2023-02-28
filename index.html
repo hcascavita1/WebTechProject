@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Inconsolata"
+    />
+    <title>Web Technologies - Hugo Cascavita</title>
+    <style>
+      body{
+        margin: 0%;
+      }
+      h1 {
+        font-family: Sans-serif;
+        text-align: center;
+        background-color: lightgreen;
+        border-color: black;
+        border-width: 0.25em;
+        border-style: double;
+      }
+      h3 {
+        font-family: cursive;
+        text-align: center;
+        background-color: lightgreen;
+        border-color: black;
+        border-width: 0.25em;
+        border-style: double;
+      }
+      h2 {
+        font-family: "Inconsolata";
+        text-align: left;
+        background-color: lightgreen;
+        border-color: black;
+        border-width: 0.25em;
+        border-style: double;
+        /* I added a double borders to my headings*/
+      }
+      p {
+        font-family: "Sans-serif";
+        color: black;
+        font-size: 1.2em;
+        text-indent: 30px;
+      }
+      img {
+        float: left;
+        margin: 20px;
+      }
+      body {
+        background-color: lightblue;
+        margin-left: 120px;
+        margin-right: 120px;
+      }
+      a {
+        text-decoration: none;
+        /* I took out the underline portion from the URL*/
+      }
+      hr {
+        background-color: red;
+        border: none;
+        height: 0.1em;
+        clear: both;
+      }
+      label {
+        font-family: "Sans-serif";
+        color: black;
+        font-size: 1.2em;
+        text-indent: 30px;
+      }
+      datalist {
+        font-family: "Sans-serif";
+        color: black;
+        font-size: 1.2em;
+        text-indent: 30px;
+      }
+      ul{
+            display: flex;
+            list-style-type: none;
+            justify-content: space-between;
+            width: 1000px;
+        }
+        nav, ul{
+            display: flex;
+            align-items: center;
+            margin: 0 -120px;
+            height: 44px;
+            font-size: 12px;
+            font-weight: 400;
+            font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+            line-height: 1;
+            position: relative;
+            padding-left: 20px;
+            padding-right: 20px;
+            z-index: 9999;
+        }
+        nav{
+            background-color: lightgreen;
+            justify-content: center;
+            margin-top: -7.52px;
+            border-color: black;
+            border-width: 0.25em;
+            border-style: double;
+        }
+        a{
+          color: black;
+          cursor: pointer;
+          font-family: cursive;
+        }
+        a:hover{
+          color: white;
+        }
+        li,a{
+          font-size: large;
+          font-family: "Inconsolata";
+        }
+        .nwhw {
+          display: inline-block;
+          color: black;
+          text-align: center;
+          padding: 10px 12px;
+          text-decoration: none;
+        }
+        .newhw:hover .nwhw {
+          background-color: yellowgreen;
+          color: red;
+        }
+        li.newhw {
+          display: inline-block;
+        }
+        .newhw-content {
+          display: none;
+          position: absolute;
+          background-color: lightgreen;
+          min-width: 160px;
+          z-index: 1;
+          border-color: black;
+          border-width: 0.25em;
+          border-style: double;
+        }
+        .newhw-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: center;
+        }
+        .newhw:hover .newhw-content {
+          display: block;
+        }
+        .sticky{
+          top:0;
+          position: sticky;
+          position: -webkit-sticky;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="sticky">
+      <nav>
+        <ul>
+          <li><strong>All About Hugo Cascavita</strong> </li>
+          <Li><a href="#"><strong>Home</strong> </a></Li>
+          <Li><a href="#AboutMe"><strong>About Me</strong> </a></Li>
+          <Li><a href="#Interests"><strong>My Interest</strong> </a></Li>
+          <Li> <a href="#Contact"><strong> Contact</strong></a></Li>
+          <Li class="newhw">
+            <a href="javascript:void(0)" class="nwhw"><strong>Homework 2</strong></a>
+            <div class="newhw-content">
+              <a href="hw2-1.html"><strong>HW2-1</strong></a>
+              <a href="hw2-2.html"><strong>HW2-2</strong></a>
+              <a href="hw2-3.html"><strong>HW2-3</strong></a>
+              <a href="hw2-4.html"><strong>HW2-4</strong></a>
+            </div>
+          </Li>
+        </ul>
+      </nav>
+    </div>
+    
+    
+
+    <div id="AboutMe"><h2>About Me</h2></div>
+
+    <p>
+      I find it a bit difficult when people ask me to introduce myself. You
+      might ask 'why?' my simple answer is that I'm from a lot of places. I
+      usually start by saying that I was born in Miami, US moved to Venezuela
+      lived there for 8 years then moved back to Miami and my parents are from
+      Colombia.
+      <img src="images/ME.jpg" alt="" width="175" />I also tell them that it's
+      up to them to derive where I'm from but I consider myself Colombian.
+    </p>
+    <p>
+      My dad did his graduate program in Boston College and both my uncles
+      studied at Boston University. Every since I was little I always dreamed of
+      going to school in Boston because I wanted to follow my dad's footsteps.
+      As I grew up I realized that my passion was business and entrepreneurship
+      and luckily for me <a href="https://www.babson.edu/">Babson College</a> is
+      one of the best business programs in the country.
+    </p>
+
+    <br />
+    <div id="Interests"><h2>My Interests</h2></div>
+    <p>
+      I've always been a very active person, I've been passionate about sports
+      since I can remember. I started playing soccer in Venezuela from a very
+      young age, 4 years old. From that day, I have alwats idolized Lionel Messi
+      and
+      <a href="https://www.fcbarcelona.com/en/">FC Barcelona</a
+      ><img
+        src="https://imageio.forbes.com/specials-images/imageserve/632ca7f8235da6149f7d2c2b/Lionel-Messi-could-return-to-FC-Barcelona-after-the-World-Cup-/960x0.jpg?format=jpg&width=960"
+        alt=""
+        width="175"
+      />. In the last couple of years I have lost some love for the sport
+      because I stopped playing it but also because Barcelona started playing
+      very bad. This made me look for another passion in my life and that's how
+      I found <a href="https://www.formula1.com/">Formula 1</a> . When I lived
+      in Venezuela I used to race in the competitive national league of Venzuela
+      which I became Champion of my division at the age of 7.
+    </p>
+    <!--Below are html tags and atributes that make up a list of different soccer teams-->
+    <label for="Favorite-Teams">Choose your favorite Soccer team:</label>
+    <select name="Favorite-Teams" id="Favorite-Teams">
+      <option value="Select Team...">Select Team...</option>
+      <option value="FC Barcelona">Fc Barcelona</option>
+      <option value="Real Madrid">Real Madrid</option>
+      <option value="Juventus">Juventus</option>
+      <option value="Manchester United">Manchester United</option>
+      <option value="Arsenal">Arsenal</option>
+    </select>
+
+    <hr />
+    <p>Posted: <time datetime="2023-01-31">January 31st</time></p>
+    <br />
+    <div id="Contact"><h3>Contact Information</h3></div>
+
+    Hugo Cascavita
+    <br />
+    OIM3690 Web Technologies - 2023 Spring -
+    <br />
+    <a href="https://github.com/hcascavita1/WebTech.git">Github Profile</a>
+    &nbsp;
+    <!--HtML entity-->
+    <a href="https://instagram.com/hugocascavita_?igshid=Zjc2ZTc4Nzk="
+      >Instagram</a
+    >
+    <br />
+    <a href="mailto:hcascavita1@babson.edu"> &#9993; Email</a>
+    &nbsp;
+    <a href="sitemap.html">Sitemap.html</a>
+  </body>
+</html>
