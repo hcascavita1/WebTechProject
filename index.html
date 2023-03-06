@@ -5,9 +5,160 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>F1 Paddock Live</title>
-    
+    <style>
+      body{
+        background-color: red;
+      }
+      ul{
+        display: flex;
+        list-style-type: none;
+        justify-content: space-around;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      nav,ul{
+        align-items: center;
+        margin: -10px;
+        height: 45px;
+        font-size: 17px;
+        font-weight: 400;
+        font-family:monospace;
+        line-height: 1;
+        position: relative;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: black;
+        margin-top:auto;
+      }
+      nav{
+        border-width: .25em;
+        border-style: double;
+        border-color: whitesmoke;
+      }
+      a{
+        text-decoration: none;
+        color: whitesmoke;
+        cursor:pointer;
+      }
+      a:hover{
+        color: red;
+      }
+      .container{
+        font-family:Arial, Helvetica, sans-serif;
+        background-color: whitesmoke;
+        margin: 5px;
+        margin-left: 175px;
+        margin-right: 175px;
+        padding: 5px;
+        display: grid;
+        grid-template-columns: .5fr .5fr .5fr;
+        grid-template-areas:
+        "Title Title Title"
+        "item16 item16 item15"
+        "item16 item16 item15"
+        "item16 item16 item14"
+        "item13 item13 item12"
+        "item13 item13 item12"
+        "item13 item13 item11"
+        "item10 item10 item9"
+        "item10 item10 item9"
+        "item10 item10 item8"
+        "item7 item7 item6"
+        "item7 item7 item6"
+        "item7 item7 item5"
+        "item4 item4 item3"
+        "item4 item4 item3"
+        "item4 item4 item2"
+      }
+      .item{
+        background-color: whitesmoke;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .item-1{
+        grid-area: Title;
+        text-align: center;
+        font-size: x-large;
+      }
+      .item-2{
+        grid-area: item2;
+      }
+      .item-3{
+        grid-area: item3;
+      }
+      .item-4{
+        grid-area: item4;
+      }
+      .item-5{
+        grid-area: item5;
+      }
+      .item-6{
+        grid-area: item6;
+      }
+      .item-7{
+        grid-area: item7;
+      }
+      .item-8{
+        grid-area: item8;
+      }
+      .item-9{
+        grid-area: item9;
+      }
+      .item-10{
+        grid-area: item10;
+      }
+      .item-11{
+        grid-area: item11;
+      }
+      .item-12{
+        grid-area: item12;
+      }
+      .item-13{
+        grid-area: item13;
+      }
+      .item-14{
+        grid-area: item14;
+      }
+      .item-15{
+        grid-area: item15;
+      }
+      .item-16{
+        grid-area: item16;
+      }
+      
+    </style>
   </head>
   <body>
-    Hello world
+    <nav>
+      <ul>
+        <li><img src="images/f1_logo.svg" alt="Formula 1" width="100"></li>
+        <li><a href="index.html">News</a></li>
+        <li><a href="History.html">History</a></li>
+        <li><a href="2023-standings.html">2023 Championship Standings</a> </li>
+        <li><a href="2023-calendar.html">2023 Championship Calendar</a></li>
+      </ul>
+    </nav>
+    <br>
+    <br>
+    <div class="container">
+      <div class="item item-1"><strong>Latest News</strong> </div>
+      <div class="item item-2">Zhou Guanyu with Alfa Romeo in Pre-season testing</div>
+      <div class="item item-3"><a href="https://www.motorsport.com/f1/news/f1-test-results-bahrain-2023-pre-season-testing-lap-times/10436445/"><img src="images/zhou-guanyu-alfa-romeo-c43-1.jpg" alt="" width="275"></a></div>
+      <div class="item item-4">Saturday, February 25 <br><br>Red Bull's Sergio Perez emerged as the fastest driver during the pre-season testing for the 2023 Formula 1 World Championship at the Sakhir circuit in Bahrain. Perez achieved the top time on the last of the three-day testing session, followed by Lewis Hamilton for Mercedes and Valtteri Bottas for Alfa Romeo. Red Bull Racing's Max Verstappen and Alfa Romeo's Zhou Guanyu were the other drivers who topped the timesheets on the opening and second day of testing, respectively. Mercedes rebounded from a slow second day with the second-quickest time on the final day set by George Russell. Fernando Alonso of Aston Martin AMR23 covered the most laps with a total of 270.</div>
+      <div class="item item-5">Max Verstappen with RedBull</div>
+      <div class="item item-6"><a href="https://www.autosport.com/f1/news/what-we-learned-from-friday-practice-at-f1s-2023-bahrain-gp/10439103/"><img src="images/max-verstappen-red-bull-racing-1.jpg" alt="" width="275"></a></div>
+      <div class="item item-7">Friday, March 3 <br><br> On Friday practice at Formula 1's 2023 Bahrain Grand Prix, Fernando Alonso and Aston Martin emerged as the quickest time in the opening practice, but Max Verstappen and Red Bull seem to be the favorites for victory in the first race of the season based on the data gathered during late-FP2 race. In addition, Red Bull seems to remain the red-hot favorite for victory in the first race of the season. Nico Hulkenberg produced an eye-catching qualifying simulation on his return to F1 action for his new team, Haas, but the veteran German driver was likely running lighter on fuel when he set his soft tyre flier. Behind the leading teams, Ferrari's potential remains unclear, while there are concerns about a sobering start to 2023 at Mercedes.</div>
+      <div class="item item-8">Fernando Alonso in FP2 at the Bahrain Grand Prix</div>
+      <div class="item item-9"><a href="https://www.sportingnews.com/us/formula-1/news/f1-bahrain-live-practice-session-2023-grand-prix/ksmmtdqbyrixbt82lnv7ovmo"><img src="images/Fernando.webp" alt="" width="300" height="175"></a></div>
+      <div class="item item-10">Friday, March 3 <br><br> Fernando Alonso set the fastest lap time of 1:30.907 in the second practice session ahead of the 2023 Bahrain Grand Prix, surprising spectators who did not expect his pace. Alonso's performance throughout the two practice sessions on Friday has sparked hope among fans that his team, the British Aston Martin, will compete with frontrunners Red Bull, Ferrari, and Mercedes this season. In the first practice session, Red Bull's Sergio Perez went fastest, making it the first time that all 20 cars were on track together in 2023, as teams were limited to one driver during preseason testing last weekend.</div>
+      <div class="item item-11">Charles Leclerc at the Bahrain Grand Prix</div>
+      <div class="item item-12"><a href="https://www.si.com/fannation/racing/f1briefings/news/charles-leclerc-faces-grid-penalty-after-disastrous-bahrain-grand-prix-lm22"><img src="images/leclerc.webp" alt="" width="300"></a></div>
+      <div class="item item-13">Sunday, March 5 <br> <br> Charles Leclerc's hopes for a podium finish were dashed at the Bahrain Grand Prix as his Ferrari SF-23 suffered an engine-related issue that forced him to retire from the race on Lap 40. Despite replacing the control electronics and energy store components of his power unit before the race, Leclerc still experienced an engine failure that may result in a grid penalty during the 2023 season. Ferrari will now have to analyze the data from the engine failure to prevent any future mishaps as they prepare for the upcoming Saudi Arabian Grand Prix.</div>
+      <div class="item item-14">Bahrain Grand Prix 2023</div>
+      <div class="item item-15"><a href="https://theathletic.com/4280273/2023/03/06/formula-1-bahrain-grand-prix-takeaways/"><img src="images/Bahrain-GP-start-1024x682.avif" alt="" width="300"></a></div>
+      <div class="item item-16">Sunday, March 5 <br> <br> Red Bull dominated the Bahrain Grand Prix to start their Formula One championship defence in emphatic style. Max Verstappen put a near 40-second gap between himself and the closest non-Red Bull car, while Red Bull’s cost cap penalty hasn’t hurt them, at least not yet. Meanwhile, Aston Martin’s podium finish with Fernando Alonso and P6 with Lance Stroll indicates the team is part of the big four teams, and the F1 midfield is looking to be a tighter battle than before. Ferrari and Mercedes have work to do, with Mercedes’ team principal admitting the team’s struggles, and McLaren's pre-race pessimism was justified.</div>
+    </div>
   </body>
 </html>
