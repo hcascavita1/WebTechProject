@@ -4,56 +4,426 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/Formula1.png" />
     <title>F1 Paddock Live</title>
     <style>
-      body{
-        background-color: red;
+      @media (max-width: 2000px) {
+        body {
+          background-color: red;
+        }
+        ul {
+          display: flex;
+          list-style-type: none;
+          justify-content: space-around;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        nav,
+        ul {
+          align-items: center;
+          margin: 0%;
+          height: 45px;
+          font-size: 17px;
+          font-weight: 400;
+          font-family: monospace;
+          line-height: 1;
+          position: relative;
+          padding-left: 5%;
+          padding-right: 5%;
+          background-color: black;
+          margin-top: auto;
+        }
+        nav {
+          border-width: 0.25em;
+          border-style: double;
+          border-color: whitesmoke;
+        }
+        a {
+          text-decoration: none;
+          color: whitesmoke;
+          cursor: pointer;
+        }
+        a:hover {
+          color: red;
+        }
+        #f1-1 {
+          position: absolute;
+          left: 50%;
+          transform: translate(-50%);
+        }
+        .container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        table,
+        td {
+          border: 1px solid black;
+          background-color: whitesmoke;
+          margin: auto;
+        }
+        h2{
+          margin: auto;
+        }
+        span {
+          color: red;
+        }
+        .dates {
+          text-align: center;
+          font-size: small;
+        }
       }
-      ul{
-        display: flex;
-        list-style-type: none;
-        justify-content: space-around;
-        margin-left: auto;
-        margin-right: auto;
+      @media (max-width: 2000px) {
+        .container {
+          margin-left: 5%;
+          margin-right: 5%;
+        }
       }
-      nav,ul{
-        align-items: center;
-        margin: -10px;
-        height: 45px;
-        font-size: 17px;
-        font-weight: 400;
-        font-family:monospace;
-        line-height: 1;
-        position: relative;
-        padding-left: 20px;
-        padding-right: 20px;
-        background-color: black;
-        margin-top:auto;
+
+      @media (max-width: 2000px) {
+        .container {
+          margin-left: 2%;
+          margin-right: 2%;
+        }
       }
-      nav{
-        border-width: .25em;
-        border-style: double;
-        border-color: whitesmoke;
+      @media (max-width: 2000px) {
+        .container {
+          margin-left: 1%;
+          margin-right: 1%;
+        }
       }
-      a{
-        text-decoration: none;
-        color: whitesmoke;
-        cursor:pointer;
-      }
-      a:hover{
-        color: red;
+      @media only screen and (min-device-width: 768px) and (max-device-width: 2000px) and (orientation: landscape) {
+        .container {
+          margin-left: 15%;
+          margin-right: 15%;
+        }
       }
     </style>
   </head>
   <body>
     <nav>
       <ul>
-        <li><img src="images/f1_logo.svg" alt="Formula 1" width="100"></li>
+        <li><img src="images/f1_logo.svg" alt="Formula 1" width="100" /></li>
         <li><a href="index.html">News</a></li>
         <li><a href="History.html">History</a></li>
-        <li><a href="2023-standings.html">2023 Championship Standings</a> </li>
+        <li><a href="2023-standings.html">2023 Championship Standings</a></li>
         <li><a href="2023-calendar.html">2023 Championship Calendar</a></li>
       </ul>
     </nav>
+    <br />
+    <br />
+    <div class="container">
+      <table>
+        <tr>
+          <th> <h2>Racing</h2></th>
+        </tr>
+        <tr>
+          <td class="dates">
+            03-05 <br />
+            MAR
+          </td>
+          <td><span>Round 1</span> <br />Bahrain Grand Prix 2023</td>
+          <td>
+            <img
+              src="images/bahrain gp.png"
+              alt="Bahrain Circuit"
+              title="Bahrain Circuit"
+              width="175"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="dates">
+            17-19 <br />
+            MAR
+          </td>
+          <td><span>Round 2</span> <br />Saudi Arabian Grand Prix 2023</td>
+          <td>
+            <img
+              src="images/saudigp.png"
+              alt="Saudi Arabian Circuit"
+              title="Saudi Arabian Street Circuit"
+              width="175"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="dates">
+            31-02 <br />
+            MAR-APR
+          </td>
+          <td><span>Round 3</span> <br />Australian Grand Prix 2023</td>
+          <td>
+            <img
+              src="images/austgp.png"
+              alt="Albert Park Circuit"
+              title="Albert Park Circuit"
+              width="175"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="dates">
+            28-30 <br />
+            APR
+          </td>
+          <td><span>Round 4</span> <br />Azerbaijan Grand Prix 2023</td>
+          <td>
+            <img
+              src="images/Baku_Circuit.png"
+              alt="Baku Street Circuit"
+              title="Baku Street Circuit"
+              width="175"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="dates">
+            05-07 <br />
+            MAY
+          </td>
+          <td><span>Round 5</span> <br />Miami Grand Prix 2023</td>
+          <td>
+            <img
+              src="images/miami.png"
+              alt="Miami International Autodrome"
+              title="Miami International Autodrome"
+              width="175"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="dates">
+            19-21 <br />
+            MAY
+          </td>
+          <td><span>Round 6</span> <br />Emilia-Romagna Grand Prix 2023</td>
+          <td>
+            <img src="images/imola.png" alt="Imola" title="Imola" width="175" />
+          </td>
+        </tr>
+        <tr>
+          <td class="dates">
+            26-28 <br />
+            MAY
+          </td>
+          <td><span>Round 7</span> <br />Monaco Grand Prix 2023</td>
+          <td>
+            <img
+              src="images/Monoco_Circuit.png"
+              alt="Monaco Street Circuit"
+              title="Monaco Street Circuit"
+              width="175"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="dates">
+            02-04 <br />
+            JUN
+          </td>
+          <td><span>Round 8</span> <br />Spanish Grand Prix 2023</td>
+          <td>
+            <img
+              src="images/Spain_Circuit.png"
+              alt="Barcelona Circuit"
+              title="Barcelona Circuit"
+              width="175"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="dates">
+            16-18 <br />
+            JUN
+          </td>
+          <td><span>Round 9</span> <br />Canadian Grand Prix 2023</td>
+          <td>
+            <img
+              src="images/Canada_Circuit.png"
+              alt="Canada Street Circuit"
+              title="Canada Street Circuit"
+              width="175"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="dates">
+            30-02 <br />
+            JUN-JUL
+          </td>
+          <td><span>Round 10</span> <br />Austrian Grand Prix 2023</td>
+          <td>
+            <img
+              src="images/Austria_Circuit.png"
+              alt="RedBull Ring"
+              title="RedBull Ring"
+              width="175"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="dates">07-09 <br />JUL</td>
+          <td><span>Round 11</span> <br />British Grand Prix 2023</td>
+          <td>
+            <img
+              src="images/Great_Britain_Circuit.png"
+              alt="Silverstone"
+              title="Silverstone"
+              width="175"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="dates">21-23 <br />JUL</td>
+          <td><span>Round 12</span> <br />Hungarian Grand Prix 2023</td>
+          <td>
+            <img
+              src="images/hungariangp.png"
+              alt="Hungary Circuit"
+              title="Hungary Circuit"
+              width="175"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="dates">28-30 <br />JUL</td>
+          <td><span>Round 13</span> <br />Belgian Grand Prix 2023</td>
+          <td>
+            <img
+              src="images/spa-gp.png"
+              alt="Spa-Francorhamps"
+              title="Spa-Francorhamps"
+              width="175"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="dates">25-27 <br />AUG</td>
+          <td><span>Round 14</span> <br />Dutch Grand Prix 2023</td>
+          <td>
+            <img
+              src="images/Netherlands_Circuit.png"
+              alt="Zandvoort"
+              title="Zandvoort"
+              width="175"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="dates">01-03 <br />SEP</td>
+          <td><span>Round 15</span> <br />Italian Grand Prix 2023</td>
+          <td>
+            <img
+              src="images/Italy_Circuit.png"
+              alt="Monza"
+              title="Monza"
+              width="175"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="dates">15-17 <br />SEP</td>
+          <td><span>Round 16</span> <br />Singapore Grand Prix 2023</td>
+          <td>
+            <img
+              src="images/Singapore_Circuit.png"
+              alt="Singapore Street Circuit"
+              title="Singapore Street Circuit"
+              width="175"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="dates">22-24 <br />SEP</td>
+          <td><span>Round 17</span> <br />Japanese Grand Prix 2023</td>
+          <td>
+            <img
+              src="images/Japan_Circuit.png"
+              alt="Suzuka"
+              title="Suzuka"
+              width="175"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="dates">06-08 <br />OCT</td>
+          <td><span>Round 18</span> <br />Qatar Grand Prix 2023</td>
+          <td>
+            <img
+              src="images/qatar-gp.png"
+              alt="Qatar Street Circuit"
+              title="Qatar Street Circuit"
+              width="175"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="dates">20-22 <br />OCT</td>
+          <td><span>Round 19</span> <br />United States Grand Prix 2023</td>
+          <td>
+            <img
+              src="images/USA_Circuit.png"
+              alt="Circuit of the Americas"
+              title="Circuit of the Americas"
+              width="175"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="dates">27-29 <br />OCT</td>
+          <td><span>Round 20</span> <br />Mexican Grand Prix 2023</td>
+          <td>
+            <img
+              src="images/mexican-gp.png"
+              alt="Circuito Hermanos Rodriguez"
+              title="Circuito Hermanos Rodriguez"
+              width="175"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="dates">03-05 <br />NOV</td>
+          <td><span>Round 21</span> <br />Brazilian Grand Prix 2023</td>
+          <td>
+            <img
+              src="images/interlagos.png"
+              alt="Interlagos"
+              title="Interlagos"
+              width="175"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="dates">16-18 <br />NOV</td>
+          <td><span>Round 22</span> <br />Las Vegas Grand Prix 2023</td>
+          <td>
+            <img
+              src="images/Las_Vegas_street_circuit.png"
+              alt="Las Vegas Street Circuit"
+              title="Las Vegas Street Circuit"
+              width="175"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="dates">24-26 <br />NOV</td>
+          <td><span>Round 23</span> <br />Abu Dhabi Grand Prix 2023</td>
+          <td>
+            <img
+              src="images/abudhabi-gp.png"
+              alt="Abu Dhabi Circuit"
+              title="Abu Dhabi Circuit"
+              width="175"
+            />
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <br />
+    <img id="f1-1" src="images/f1_logo.svg" alt="" width="100" />
+    <br />
+    <br />
   </body>
 </html>
