@@ -145,12 +145,9 @@
           color: black;
           margin: auto;
         }
-        button{
-          margin-left: 283px;
-        }
       }
       @media (max-width: 2000px) {
-        .container {
+        .container, .extra {
           margin-left: 5%;
           margin-right: 5%;
         }
@@ -161,19 +158,19 @@
       }
 
       @media (max-width: 2000px) {
-        .container {
+        .container, .extra {
           margin-left: 2%;
           margin-right: 2%;
         }
       }
       @media (max-width: 2000px) {
-        .container {
+        .container, .extra {
           margin-left: 1%;
           margin-right: 1%;
         }
       }
       @media only screen and (min-device-width: 768px) and (max-device-width: 2000px) and (orientation: landscape) {
-        .container {
+        .container, .extra {
           margin-left: 15%;
           margin-right: 15%;
         }
@@ -320,11 +317,14 @@
       </div>
     </div>
     <br />
-    <button><a class="button" href="form.html">Give Feed Back!</a></button>
+    <div class="extra">
+      <button><a class="button" href="form.html">Give Feed Back!</a></button>
     <br>
     <button><a class="button" href="sitemap.html">F1 Paddock's sitemap</a></button>
     <br>
     <img id="f1-1" src="images/f1_logo.svg" alt="" width="100" />
+    </div>
+    
     <br />
     <br />
   </body>
