@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/Formula1.png" />
+    <title>F1 Paddock Live - form</title>
+    <style>
+      @media (max-width: 2000px) {
+        body {
+          background-color: red;
+        }
+        ul {
+          display: flex;
+          list-style-type: none;
+          justify-content: space-around;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        nav,
+        ul {
+          align-items: center;
+          margin: 0;
+          height: 45px;
+          font-size: 17px;
+          font-weight: 400;
+          font-family: monospace;
+          line-height: 1;
+          position: relative;
+          padding-left: 5%;
+          padding-right: 5%;
+          background-color: black;
+          margin-top: auto;
+        }
+        nav {
+          border-width: 0.25em;
+          border-style: double;
+          border-color: whitesmoke;
+        }
+        a {
+          text-decoration: none;
+          color: whitesmoke;
+          cursor: pointer;
+        }
+        a:hover {
+          color: red;
+        }
+        }
+        #f1-1 {
+          position: absolute;
+          left: 50%;
+          transform: translate(-50%);
+        }
+        .container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        form{
+            background-color: whitesmoke;
+        }
+      @media (max-width: 2000px) {
+        .container {
+          margin-left: 5%;
+          margin-right: 5%;
+        }
+        .item-1 {
+          font-size: x-large;
+        }
+      }
+      @media (max-width: 2000px) {
+        .container {
+          margin-left: 2%;
+          margin-right: 2%;
+        }
+      }
+      @media (max-width: 2000px) {
+        .container {
+          margin-left: 1%;
+          margin-right: 1%;
+        }
+      }
+      @media only screen and (min-device-width: 768px) and (max-device-width: 2000px) and (orientation: landscape) {
+        .container {
+          margin-left: 15%;
+          margin-right: 15%;
+        }
+      }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><img src="images/f1_logo.svg" alt="Formula 1" width="100" /></li>
+          <li><a href="index.html">News</a></li>
+          <li><a href="History.html">History</a></li>
+          <li><a href="2023-standings.html">2023 Championship Standings</a></li>
+          <li><a href="2023-calendar.html">2023 Championship Calendar</a></li>
+        </ul>
+      </nav>
+      <br>
+      <div class="container">
+    <form action="https://oim-apis.up.railway.app/form2" method="POST">
+        <fieldset>
+            <legend> <strong>Your Information:</strong> </legend>
+            <br>
+            <div>
+                <label for="First-name">Name:</label>
+                <input type="text" name="First Name" id="First-name" placeholder="Enter your full name here...">
+            </div>
+            <br>
+            <div>
+                <label for="Email">Email:</label>
+                <input type="text" name="Email" id="Email" placeholder="Enter your email here...">
+            </div>
+            <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend> <strong>Your Thoughts:</strong> </legend>
+            <br>
+            <div>
+                <label for="fav-driver">Favorite Driver:</label>
+                <input list="driver-name" id="fav-driver" name="fav-driver">
+
+                <datalist id="driver-name">
+                    <option value="Max Verstappen">
+                    <option value="Sergio Perez">
+                    <option value="Charles Leclerc"> 
+                    <option value="Carlos Sainz">
+                    <option value="George Russel">
+                    <option value="Lewis Hamilton">
+                    <option value="Fernando Alonso">
+                    <option value="Esteban Ocon">
+                    <option value="Lando Norris">
+                    <option value="Oscar Piastri">
+                    <option value="Kevin Magnussen">
+                    <option value="Nico Hulkenberg">
+                    <option value="Yuki Tsunoda">
+                    <option value="Nyck De Vryes">
+                    <option value="Alex Albon">
+                    <option value="Logan Sargent">
+                    <option value="Valtteri Bottas">
+                    <option value="Zhou Guanyu">
+                    <option value="Pierre Gasly">
+                    <option value="Lance Stroll">
+                </datalist>
+            </div>
+            <br>
+            <div>
+                <div id="text">What do you think of F1 Paddock?</div> 
+                
+                <label>Great
+                    <input type="radio" name="review" value="great">
+                </label>
+                <label>Good
+                    <input type="radio" name="review" value="awesome">
+                </label>
+                <label>Bad
+                    <input type="radio" name="review" value="good">
+                </label>
+            </div>
+            <br>
+            <div>
+                <div>
+                    <label for="comments">What were your favorite sections of F1 Paddock? <br>Any suggestions?</label>
+                </div>
+                <div>
+                    <textarea 
+                        name="comments" 
+                        id="comments" 
+                        cols="25" 
+                        rows="5">
+                    </textarea>
+                </div>
+            </div>
+            <div>
+                <input type="checkbox" id="signup" name="updates" value="updates" checked>
+                <label for="signup">Automatic email updates</label>
+            </div>
+            <br>
+            <div>
+                <input type="Submit" value="Submit">
+                <input type="Reset" value="Reset">
+            </div>
+      </div>
+      <br>
+    <img id="f1-1" src="images/f1_logo.svg" alt="" width="100" />
+    <br />
+    <br />
+</body>
+</html>
