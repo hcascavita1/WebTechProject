@@ -4,56 +4,573 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>F1 Paddock Live</title>
+    <link rel="shortcut icon" href="images/Formula1.png" />
+    <title>F1 Paddock Live - Standings</title>
     <style>
-      body{
-        background-color: red;
+      @media (max-width: 2000px) {
+        body {
+          background-color: red;
+        }
+        ul {
+          display: flex;
+          list-style-type: none;
+          justify-content: space-around;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        nav,
+        ul {
+          align-items: center;
+          margin: 0%;
+          height: 45px;
+          font-size: 17px;
+          font-weight: 400;
+          font-family: monospace;
+          line-height: 1;
+          position: relative;
+          padding-left: 5%;
+          padding-right: 5%;
+          background-color: black;
+          margin-top: auto;
+        }
+        nav {
+          border-width: 0.25em;
+          border-style: double;
+          border-color: whitesmoke;
+        }
+        a {
+          text-decoration: none;
+          color: whitesmoke;
+          cursor: pointer;
+        }
+        a:hover {
+          color: red;
+        }
+        #f1-1 {
+          position: absolute;
+          left: 50%;
+          transform: translate(-50%);
+        }
+        .parent {
+          display: flex;
+          justify-content: center;
+        }
+        .container {
+          display: grid;
+          grid-template-columns: 1fr 0.5fr 1fr;
+          grid-template-areas: "Table-1 ghost-table Table-2";
+        }
+        table,
+        td {
+          border: 1px solid black;
+          background-color: whitesmoke;
+          margin: auto;
+        }
+        h2 {
+          margin: auto;
+        }
+        .teams {
+          color: darkgrey;
+          font-size: smaller;
+        }
+        .points {
+          background-color: lightgrey;
+          color: black;
+          font-size: smaller;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .position {
+          color: red;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: bold;
+        }
+        .dates {
+          text-align: center;
+          font-size: small;
+        }
+        caption {
+          background-color: whitesmoke;
+        }
       }
-      ul{
-        display: flex;
-        list-style-type: none;
-        justify-content: space-around;
-        margin-left: auto;
-        margin-right: auto;
+      @media (max-width: 2000px) {
+        .parent {
+          margin-left: 5%;
+          margin-right: 5%;
+        }
       }
-      nav,ul{
-        align-items: center;
-        margin: -10px;
-        height: 45px;
-        font-size: 17px;
-        font-weight: 400;
-        font-family:monospace;
-        line-height: 1;
-        position: relative;
-        padding-left: 20px;
-        padding-right: 20px;
-        background-color: black;
-        margin-top:auto;
+
+      @media (max-width: 2000px) {
+        .parent {
+          margin-left: 2%;
+          margin-right: 2%;
+        }
       }
-      nav{
-        border-width: .25em;
-        border-style: double;
-        border-color: whitesmoke;
+      @media (max-width: 2000px) {
+        .parent {
+          margin-left: 1%;
+          margin-right: 1%;
+        }
       }
-      a{
-        text-decoration: none;
-        color: whitesmoke;
-        cursor:pointer;
-      }
-      a:hover{
-        color: red;
+      @media only screen and (min-device-width: 768px) and (max-device-width: 2000px) and (orientation: landscape) {
+        .parent {
+          margin-left: 15%;
+          margin-right: 15%;
+        }
       }
     </style>
   </head>
   <body>
     <nav>
       <ul>
-        <li><img src="images/f1_logo.svg" alt="Formula 1" width="100"></li>
+        <li><img src="images/f1_logo.svg" alt="Formula 1" width="100" /></li>
         <li><a href="index.html">News</a></li>
         <li><a href="History.html">History</a></li>
-        <li><a href="2023-standings.html">2023 Championship Standings</a> </li>
+        <li><a href="2023-standings.html">2023 Championship Standings</a></li>
         <li><a href="2023-calendar.html">2023 Championship Calendar</a></li>
       </ul>
     </nav>
+    <br />
+    <br />
+    <div class="parent">
+      <div class="container">
+        <div class="table table-1">
+          <table class="drivers">
+            <caption>
+              <h3>Drivers Championship 2023</h3>
+            </caption>
+            <tr>
+              <td><span class="position">1</span></td>
+              <td>
+                <img
+                  src="images/maxhead.jfif"
+                  alt="Max"
+                  title="Max Verstappen"
+                  width="60"
+                />
+              </td>
+              <td>
+                Max Verstappen <br />
+                <span class="teams">RedBull Racing</span>
+              </td>
+              <td><span class="points">25 PTS</span></td>
+            </tr>
+            <tr>
+              <td><span class="position">2</span></td>
+              <td>
+                <img
+                  src="images/checo.jfif"
+                  alt="checo"
+                  title="Sergio Perez"
+                  width="75"
+                />
+              </td>
+              <td>
+                Sergio Perez <br /><span class="teams">RedBull Racing</span>
+              </td>
+              <td><span class="points">18 PTS</span></td>
+            </tr>
+            <tr>
+              <td><span class="position">3</span></td>
+              <td>
+                <img
+                  src="images/alonsohead.jfif"
+                  alt="alo"
+                  title="Fernando Alonso"
+                  width="75"
+                />
+              </td>
+              <td>
+                Fernando Alonso <br /><span class="teams">Aston Martin</span>
+              </td>
+              <td><span class="points">15 PTS</span></td>
+            </tr>
+            <tr>
+              <td><span class="position">4</span></td>
+              <td>
+                <img
+                  src="images/sainzhead.jfif"
+                  alt="sainz"
+                  title="Carlos Sainz"
+                  width="75"
+                />
+              </td>
+              <td>Carlos Sainz <br /><span class="teams">Ferrari</span></td>
+              <td><span class="points">12 PTS</span></td>
+            </tr>
+            <tr>
+              <td><span class="position">5</span></td>
+              <td>
+                <img
+                  src="images/lewishead.jfif"
+                  alt="lewis"
+                  title="Lewis Hamilton"
+                  width="75"
+                />
+              </td>
+              <td>Lewis Hamilton <br /><span class="teams">Mercedes</span></td>
+              <td><span class="points">10 PTS</span></td>
+            </tr>
+            <tr>
+              <td><span class="position">6</span></td>
+              <td>
+                <img
+                  src="images/strollhead.jfif"
+                  alt="stroll"
+                  title="Lance Stroll"
+                  width="75"
+                />
+              </td>
+              <td>
+                Lance Stroll <br /><span class="teams">Aston Martin</span>
+              </td>
+              <td><span class="points">8 PTS</span></td>
+            </tr>
+            <tr>
+              <td><span class="position">7</span></td>
+              <td>
+                <img
+                  src="images/georgehead.jfif"
+                  alt="russell"
+                  title="George Russell"
+                  width="60"
+                />
+              </td>
+              <td>George Russell <br /><span class="teams">Mercedes</span></td>
+              <td><span class="points">6 PTS</span></td>
+            </tr>
+            <tr>
+              <td><span class="position">8</span></td>
+              <td>
+                <img
+                  src="images/bottashead.jfif"
+                  alt="bottas"
+                  title="Valtteri Bottas"
+                  width="75"
+                />
+              </td>
+              <td>
+                Valtteri Bottas <br /><span class="teams">Alfa Romeo</span>
+              </td>
+              <td><span class="points">4 PTS</span></td>
+            </tr>
+            <tr>
+              <td><span class="position">9</span></td>
+              <td>
+                <img
+                  src="images/gaslyhead.jfif"
+                  alt="gasly"
+                  title="Pierre Gasly"
+                  width="75"
+                />
+              </td>
+              <td>Pierre Gasly <br /><span class="teams">Alpine</span></td>
+              <td><span class="points">2 PTS</span></td>
+            </tr>
+            <tr>
+              <td><span class="position">10</span></td>
+              <td>
+                <img
+                  src="images/albonhead.jfif"
+                  alt="albon"
+                  title="Alexander Albon"
+                  width="60"
+                />
+              </td>
+              <td>Alexander Albon <br /><span class="teams">Williams</span></td>
+              <td><span class="points">1 PTS</span></td>
+            </tr>
+            <tr>
+              <td><span class="position">11</span></td>
+              <td>
+                <img
+                  src="images/yukihead.jfif"
+                  alt="yuki"
+                  title="Yuki Tsunoda"
+                  width="75"
+                />
+              </td>
+              <td>Yuki Tsunoda <br /><span class="teams">AlphaTauri</span></td>
+              <td><span class="points">0 PTS</span></td>
+            </tr>
+            <tr>
+              <td><span class="position">12</span></td>
+              <td>
+                <img
+                  src="images/loganhead.jfif"
+                  alt="logan"
+                  title="Logan Sargeant"
+                  width="75"
+                />
+              </td>
+              <td>Logan Sargeant <br /><span class="teams">Williams</span></td>
+              <td><span class="points">0 PTS</span></td>
+            </tr>
+            <tr>
+              <td><span class="position">13</span></td>
+              <td>
+                <img
+                  src="images/kevinhead.jfif"
+                  alt="kevin"
+                  title="Kevin Magnussen"
+                  width="75"
+                />
+              </td>
+              <td>Kevin Magnussen <br /><span class="teams">Haas</span></td>
+              <td><span class="points">0 PTS</span></td>
+            </tr>
+            <tr>
+              <td><span class="position">14</span></td>
+              <td>
+                <img
+                  src="images/nyckhead.jfif"
+                  alt="nyck"
+                  title="Nyck De Vries"
+                  width="75"
+                />
+              </td>
+              <td>Nyck De Vries <br /><span class="teams">AlphaTauri</span></td>
+              <td><span class="points">0 PTS</span></td>
+            </tr>
+            <tr>
+              <td><span class="position">15</span></td>
+              <td>
+                <img
+                  src="images/nicohead.jfif"
+                  alt="nico"
+                  title="Nico Hulkenberg"
+                  width="75"
+                />
+              </td>
+              <td>Nico Hulkenberg <br /><span class="teams">Haas</span></td>
+              <td><span class="points">0 PTS</span></td>
+            </tr>
+            <tr>
+              <td><span class="position">16</span></td>
+              <td>
+                <img
+                  src="images/zhouhead.jfif"
+                  alt="zhou"
+                  title="Zhou Guanyu"
+                  width="75"
+                />
+              </td>
+              <td>Zhou Guanyu <br /><span class="teams">Alfa Romeo</span></td>
+              <td><span class="points">0 PTS</span></td>
+            </tr>
+            <tr>
+              <td><span class="position">17</span></td>
+              <td>
+                <img
+                  src="images/landohead.jfif"
+                  alt="lando"
+                  title="Lando Norris"
+                  width="75"
+                />
+              </td>
+              <td>Lando Norris <br /><span class="teams">McLaren</span></td>
+              <td><span class="points">0 PTS</span></td>
+            </tr>
+            <tr>
+              <td><span class="position">18</span></td>
+              <td>
+                <img
+                  src="images/charleshead.jfif"
+                  alt="charles"
+                  title="Charles Leclerc"
+                  width="75"
+                />
+              </td>
+              <td>Charles Leclerc <br /><span class="teams">Ferrari</span></td>
+              <td><span class="points">0 PTS</span></td>
+            </tr>
+            <tr>
+              <td><span class="position">19</span></td>
+              <td>
+                <img
+                  src="images/oconhead.jfif"
+                  alt="ocon"
+                  title="Esteban Ocon"
+                  width="75"
+                />
+              </td>
+              <td>Esteban Ocon <br /><span class="teams">Alpine</span></td>
+              <td><span class="points">0 PTS</span></td>
+            </tr>
+            <tr>
+              <td><span class="position">20</span></td>
+              <td>
+                <img
+                  src="images/oscarhead.jfif"
+                  alt="oscar"
+                  title="Oscar Piastri"
+                  width="75"
+                />
+              </td>
+              <td>Oscar Piastri <br /><span class="teams">McLaren</span></td>
+              <td><span class="points">0 PTS</span></td>
+            </tr>
+          </table>
+        </div>
+        <div class="ghost-table"></div>
+
+        <div class="table table-2">
+          <table class="constructors">
+            <caption>
+              <h3>Constructors Championship 2023</h3>
+            </caption>
+            <tr>
+              <td><span class="position">1</span></td>
+              <td>
+                <img
+                  src="images/red-bull-racing-logo-1.jpg"
+                  alt="RB"
+                  title="RedBull"
+                  width="75"
+                />
+              </td>
+              <td>
+                RedBull <br /><span class="teams">Perez / Verstappen</span>
+              </td>
+              <td><span class="points">43 PTS</span></td>
+            </tr>
+            <tr>
+              <td><span class="position">2</span></td>
+              <td>
+                <img
+                  src="images/Aston-Martin.jpg"
+                  alt="AM"
+                  title="Aston Martin"
+                  width="75"
+                />
+              </td>
+              <td>
+                Aston Martin <br /><span class="teams"> Stroll / Alonso</span>
+              </td>
+              <td><span class="points">23 PTS</span></td>
+            </tr>
+            <tr>
+              <td><span class="position">3</span></td>
+              <td>
+                <img
+                  src="images/mercedes-f1-logo-1.jpg"
+                  alt="Merc"
+                  title="Mercedes"
+                  width="75"
+                />
+              </td>
+              <td>
+                Mercedes <br /><span class="teams"> Hamilton / Russell</span>
+              </td>
+              <td><span class="points">16 PTS</span></td>
+            </tr>
+            <tr>
+              <td><span class="position">4</span></td>
+              <td>
+                <img
+                  src="images/ferrari.jpg"
+                  alt="F"
+                  title="Ferrari"
+                  width="50"
+                />
+              </td>
+              <td>Ferrari <br /><span class="teams">Leclerc / Sainz</span></td>
+              <td><span class="points">12 PTS</span></td>
+            </tr>
+            <tr>
+              <td><span class="position">5</span></td>
+              <td>
+                <img
+                  src="images/Alfaracing.webp"
+                  alt="AR"
+                  title="Alfa Romeo"
+                  width="75"
+                />
+              </td>
+              <td>
+                Alfa Romeo <br /><span class="teams"> Zhou / Bottas</span>
+              </td>
+              <td><span class="points">4 PTS</span></td>
+            </tr>
+            <tr>
+              <td><span class="position">6</span></td>
+              <td>
+                <img
+                  src="images/Alpine.jpg"
+                  alt="A"
+                  title="Alpine"
+                  width="75"
+                />
+              </td>
+              <td>Alpine <br /><span class="teams">Gasly / Ocon</span></td>
+              <td><span class="points">2 PTS</span></td>
+            </tr>
+            <tr>
+              <td><span class="position">7</span></td>
+              <td>
+                <img
+                  src="images/WilliamsRacing_logo2021_rgb_positive_stacked.webp"
+                  alt="W"
+                  title="Williams"
+                  width="75"
+                />
+              </td>
+              <td>
+                Williams <br /><span class="teams">Albon / Sargeant</span>
+              </td>
+              <td><span class="points">1 PTS</span></td>
+            </tr>
+            <tr>
+              <td><span class="position">8</span></td>
+              <td>
+                <img
+                  src="images/alpha.jpg"
+                  alt="Alpha"
+                  title="AlphaTauri"
+                  width="75"
+                />
+              </td>
+              <td>
+                AlphaTauri <br /><span class="teams">Tsunoda / De Vries</span>
+              </td>
+              <td><span class="points">0 PTS</span></td>
+            </tr>
+            <tr>
+              <td><span class="position">9</span></td>
+              <td>
+                <img src="images/haas.jpg" alt="Haas" title="Haas" width="75" />
+              </td>
+              <td>
+                Haas F1 Team <br /><span class="teams"
+                  >Magnussen / Hulkenberg</span
+                >
+              </td>
+              <td><span class="points">0 PTS</span></td>
+            </tr>
+            <tr>
+              <td><span class="position">10</span></td>
+              <td>
+                <img
+                  src="images/McL.png"
+                  alt="McL"
+                  title="McLaren"
+                  width="75"
+                />
+              </td>
+              <td>McLaren <br /><span class="teams">Norris / Piastri</span></td>
+              <td><span class="points">0 PTS</span></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <br />
+      <img id="f1-1" src="images/f1_logo.svg" alt="" width="100" />
+    </div>
+    <br />
+    <br />
   </body>
 </html>

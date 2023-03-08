@@ -4,56 +4,113 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>F1 Paddock Live - History</title>
+    <link rel="shortcut icon" href="images/Formula1.png" />
+    <title>F1 Paddock Live - form</title>
     <style>
-      body{
-        background-color: red;
+      @media (max-width: 2000px) {
+        body {
+          background-color: red;
+        }
+        ul {
+          display: flex;
+          list-style-type: none;
+          justify-content: space-around;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        nav,
+        ul {
+          align-items: center;
+          margin: 0;
+          height: 45px;
+          font-size: 17px;
+          font-weight: 400;
+          font-family: monospace;
+          line-height: 1;
+          position: relative;
+          padding-left: 5%;
+          padding-right: 5%;
+          background-color: black;
+          margin-top: auto;
+        }
+        nav {
+          border-width: 0.25em;
+          border-style: double;
+          border-color: whitesmoke;
+        }
+        .nav {
+          text-decoration: none;
+          color: whitesmoke;
+          cursor: pointer;
+        }
+        a {
+          text-decoration: none;
+          color: whitesmoke;
+        }
+        a:hover {
+          color: red;
+        }
       }
-      ul{
-        display: flex;
-        list-style-type: none;
-        justify-content: space-around;
-        margin-left: auto;
-        margin-right: auto;
+      #f1-1 {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
       }
-      nav,ul{
+      .container {
         align-items: center;
-        margin: -10px;
-        height: 45px;
-        font-size: 17px;
-        font-weight: 400;
-        font-family:monospace;
-        line-height: 1;
-        position: relative;
-        padding-left: 20px;
-        padding-right: 20px;
-        background-color: black;
-        margin-top:auto;
+        background-color: whitesmoke;
+        margin: 5px;
+        margin-left: 175px;
+        margin-right: 175px;
+        padding: 5px;
       }
-      nav{
-        border-width: .25em;
-        border-style: double;
-        border-color: whitesmoke;
+      @media (max-width: 2000px) {
+        .container {
+          margin-left: 5%;
+          margin-right: 5%;
+        }
       }
-      a{
-        text-decoration: none;
-        color: whitesmoke;
-        cursor:pointer;
+      @media (max-width: 2000px) {
+        .container {
+          margin-left: 2%;
+          margin-right: 2%;
+        }
       }
-      a:hover{
-        color: red;
+      @media (max-width: 2000px) {
+        .container {
+          margin-left: 1%;
+          margin-right: 1%;
+        }
+      }
+      @media only screen and (min-device-width: 768px) and (max-device-width: 2000px) and (orientation: landscape) {
+        .container {
+          margin-left: 15%;
+          margin-right: 15%;
+        }
       }
     </style>
   </head>
   <body>
     <nav>
       <ul>
-        <li><img src="images/f1_logo.svg" alt="Formula 1" width="100"></li>
+        <li><img src="images/f1_logo.svg" alt="Formula 1" width="100" /></li>
         <li><a href="index.html">News</a></li>
         <li><a href="History.html">History</a></li>
-        <li><a href="2023-standings.html">2023 Championship Standings</a> </li>
+        <li><a href="2023-standings.html">2023 Championship Standings</a></li>
         <li><a href="2023-calendar.html">2023 Championship Calendar</a></li>
       </ul>
     </nav>
+    <br>
+    Coming Soon...
+    <br>
+    <br>
+    This page will be more interactive with the user. Videos will be shown about the historic drives from historic drivers in 
+    Formula 1. There will be biographies about differemt drivers in different eras and much more!
+    <br />
+    <br>
+      <img id="f1-1" src="images/f1_logo.svg" alt="" width="100" />
+    </div>
+    <br />
+    <br />
   </body>
 </html>
