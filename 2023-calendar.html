@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="images/favicon_io (1).zip" />
+    <meta name="description" content="F1 Paddock Live brings you the latest news and updates from the 2023 Formula 1 World Championship." />
+    <meta name="keywords" content="F1, Formula 1, 2023, World Championship, News, Updates, Results, Drivers, Teams" />
+    <link rel="canonical" href="https://www.f1paddocklive.com/" />
+    <link rel="shortcut icon" href="images/Formula1.png" />
     <title>F1 Paddock Live - Calendar</title>
     <style>
       @media (max-width: 2000px) {
@@ -75,6 +78,11 @@
         caption {
           background-color: whitesmoke;
         }
+        .button {
+          background-color: whitesmoke;
+          color: black;
+          margin: auto;
+        }
       }
       @media (max-width: 2000px) {
         .container {
@@ -122,7 +130,7 @@
       <ul>
         <li><img src="images/f1_logo.svg" alt="Formula 1" width="100" /></li>
         <li><a href="index.html">News</a></li>
-        <li><a href="History.html">History</a></li>
+        <li><a href="Driver-Profile.html">Driver Profile</a></li>
         <li><a href="2023-standings.html">2023 Championship Standings</a></li>
         <li><a href="2023-calendar.html">2023 Championship Calendar</a></li>
       </ul>
@@ -437,8 +445,28 @@
         </tr>
       </table>
     </div>
+    <script>
+      const images = document.querySelectorAll("img");
 
-    <br />
+      for (let i = 0; i < images.length; i++) {
+        images[i].addEventListener("mouseover", function () {
+          this.style.width = parseInt(this.width * 1.5) + "px";
+          this.style.height = parseInt(this.height * 1.5) + "px";
+        });
+
+        images[i].addEventListener("mouseout", function () {
+          this.style.width = "";
+          this.style.height = "";
+        });
+      }
+    </script>
+    <div class="extra">
+      <button><a class="button" href="form.html">Give Feed Back!</a></button>
+      <br />
+      <button>
+        <a class="button" href="sitemap.html">F1 Paddock's sitemap</a>
+      </button>
+      <br />
     <img id="f1-1" src="images/f1_logo.svg" alt="" width="100" />
     <br />
     <br />

@@ -4,134 +4,138 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="F1 Paddock Live brings you the latest news and updates from the 2023 Formula 1 World Championship." />
-    <meta name="keywords" content="F1, Formula 1, 2023, World Championship, News, Updates, Results, Drivers, Teams" />
-    <link rel="canonical" href="https://www.f1paddocklive.com/" />
     <link rel="shortcut icon" href="images/Formula1.png" />
     <title>F1 Paddock Live - Standings</title>
     <style>
       @media (max-width: 2000px) {
-        body {
-          background-color: red;
-        }
-        ul {
-          display: flex;
-          list-style-type: none;
-          justify-content: space-around;
-          margin-left: auto;
-          margin-right: auto;
-        }
-        nav,
-        ul {
-          align-items: center;
-          margin: 0%;
-          height: 45px;
-          font-size: 17px;
-          font-weight: 400;
-          font-family: monospace;
-          line-height: 1;
-          position: relative;
-          padding-left: 5%;
-          padding-right: 5%;
-          background-color: black;
-          margin-top: auto;
-        }
-        nav {
-          border-width: 0.25em;
-          border-style: double;
-          border-color: whitesmoke;
-        }
-        a {
-          text-decoration: none;
-          color: whitesmoke;
-          cursor: pointer;
-        }
-        a:hover {
-          color: red;
-        }
-        #f1-1 {
-          position: absolute;
-          left: 50%;
-          transform: translate(-50%);
-        }
-        .parent {
-          display: flex;
-          justify-content: center;
-        }
-        .container {
-          display: grid;
-          grid-template-columns: 1fr 0.5fr 1fr;
-          grid-template-areas: "Table-1 ghost-table Table-2";
-        }
-        table,
-        td {
-          border: 1px solid black;
-          background-color: whitesmoke;
-          margin: auto;
-        }
-        h2 {
-          margin: auto;
-        }
-        .teams {
-          color: darkgrey;
-          font-size: smaller;
-        }
-        .points {
-          background-color: lightgrey;
-          color: black;
-          font-size: smaller;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-        .position {
-          color: red;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-weight: bold;
-        }
-        .dates {
-          text-align: center;
-          font-size: small;
-        }
-        caption {
-          background-color: whitesmoke;
-        }
-        .button {
-          background-color: whitesmoke;
-          color: black;
-          margin: auto;
-        }
-      }
-      @media (max-width: 2000px) {
-        .parent {
-          margin-left: 5%;
-          margin-right: 5%;
-        }
-      }
-
-      @media (max-width: 2000px) {
-        .parent {
-          margin-left: 2%;
-          margin-right: 2%;
-        }
-      }
-      @media (max-width: 2000px) {
-        .parent {
-          margin-left: 1%;
-          margin-right: 1%;
-        }
-      }
-      @media only screen and (min-device-width: 768px) and (max-device-width: 2000px) and (orientation: landscape) {
-        .parent {
-          margin-left: 15%;
-          margin-right: 15%;
-        }
-      }
+  body {
+    background-color: red;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 45px;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: monospace;
+    line-height: 1;
+    position: relative;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: black;
+    margin-top: auto;
+    border-width: 0.25em;
+    border-style: double;
+    border-color: whitesmoke;
+  }
+  
+  ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: whitesmoke;
+    cursor: pointer;
+  }
+  
+  a:hover {
+    color: red;
+  }
+  
+  .parent {
+    display: flex;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-areas: "Table-1 ghost-table Table-2";
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  
+  table,
+  td {
+    border: 1px solid black;
+    background-color: whitesmoke;
+    margin: auto;
+  }
+  
+  h2 {
+    margin: auto;
+  }
+  
+  .teams {
+    color: darkgrey;
+    font-size: smaller;
+  }
+  
+  .points {
+    background-color: lightgrey;
+    color: black;
+    font-size: smaller;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .position {
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  
+  .dates {
+    text-align: center;
+    font-size: small;
+  }
+  
+  caption {
+    background-color: whitesmoke;
+  }
+  
+  @media only screen and (min-device-width: 768px) and (max-device-width: 2000px) and (orientation: landscape) {
+    .parent {
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+  }
+}
     </style>
   </head>
   <body>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-YDW77NJ24F"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-YDW77NJ24F");
+    </script>
     <nav>
       <ul>
         <li><img src="images/f1_logo.svg" alt="Formula 1" width="100" /></li>
@@ -575,31 +579,10 @@
         </div>
       </div>
     </div>
-    <script>
-      const images = document.querySelectorAll("img");
-
-      for (let i = 0; i < images.length; i++) {
-        images[i].addEventListener("mouseover", function () {
-          this.style.width = parseInt(this.width * 2) + "px";
-        });
-
-        images[i].addEventListener("mouseout", function () {
-          this.style.width = "";
-          this.style.height = "";
-        });
-      }
-    </script>
-    <div class="extra">
-      <button><a class="button" href="form.html">Give Feed Back!</a></button>
-      <br />
-      <button>
-        <a class="button" href="sitemap.html">F1 Paddock's sitemap</a>
-      </button>
-      <br />
+    <br />
       <img id="f1-1" src="images/f1_logo.svg" alt="" width="100" />
     </div>
     <br />
     <br />
-    <script src="script.js"></script>
   </body>
 </html>

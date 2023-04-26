@@ -4,8 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="images/favicon_io (1).zip" />
-    <title>F1 Paddock Live</title>
+    <meta
+      name="description"
+      content="F1 Paddock Live brings you the latest news and updates from the 2023 Formula 1 World Championship."
+    />
+    <meta
+      name="keywords"
+      content="F1, Formula 1, 2023, World Championship, News, Updates, Results, Drivers, Teams"
+    />
+    <link rel="canonical" href="https://www.f1paddocklive.com/" />
+    <link rel="shortcut icon" href="images/Formula1.png" />
+    <title>2023 Formula 1 World Championship News | F1 Paddock Live</title>
     <style>
       @media (max-width: 2000px) {
         body {
@@ -47,7 +56,7 @@
           color: red;
         }
         .container {
-          font-family: Arial, Helvetica, sans-serif;
+          font-family: "Source Sans Pro", Arial, sans-serif;
           background-color: whitesmoke;
           margin: 5px;
           margin-left: 175px;
@@ -76,7 +85,7 @@
         .item {
           background-color: whitesmoke;
           border: 1px solid black;
-          display: flex;
+
           justify-content: center;
           align-items: center;
         }
@@ -91,6 +100,9 @@
         }
         .item-3 {
           grid-area: item3;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
         .item-4 {
           grid-area: item4;
@@ -101,6 +113,9 @@
         }
         .item-6 {
           grid-area: item6;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
         .item-7 {
           grid-area: item7;
@@ -111,6 +126,9 @@
         }
         .item-9 {
           grid-area: item9;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
         .item-10 {
           grid-area: item10;
@@ -121,6 +139,9 @@
         }
         .item-12 {
           grid-area: item12;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
         .item-13 {
           grid-area: item13;
@@ -131,6 +152,9 @@
         }
         .item-15 {
           grid-area: item15;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
         .item-16 {
           grid-area: item16;
@@ -146,6 +170,172 @@
           margin: auto;
         }
       }
+      .rectangle {
+        width: 400px;
+        height: 100px;
+        background-color: black;
+        border-radius: 10px;
+        margin: 0 auto;
+        position: relative;
+        border: 2px solid white;
+      }
+
+      .circle {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: darkgrey;
+        position: absolute;
+        border: 2px solid white;
+      }
+
+      .circle.one {
+        top: 25px;
+        left: 25px;
+      }
+
+      .circle.two {
+        top: 25px;
+        left: 100px;
+      }
+
+      .circle.three {
+        top: 25px;
+        left: 175px;
+      }
+
+      .circle.four {
+        top: 25px;
+        left: 250px;
+      }
+
+      .circle.five {
+        top: 25px;
+        left: 325px;
+      }
+
+      .rectangle .circle.one {
+        animation-name: one-animation;
+        animation-duration: 12s;
+      }
+
+      @keyframes one-animation {
+        0% {
+          background-color: crimson;
+        }
+        50% {
+          background-color: crimson;
+        }
+        60% {
+          background-color: darkgrey;
+        }
+        100% {
+          background-color: darkgrey;
+        }
+      }
+
+      .rectangle .circle.two {
+        animation-name: two-animation;
+        animation-duration: 10s;
+        animation-delay: 1s;
+      }
+
+      @keyframes two-animation {
+        0% {
+          background-color: crimson;
+        }
+        50% {
+          background-color: crimson;
+        }
+        60% {
+          background-color: darkgrey;
+        }
+        100% {
+          background-color: darkgrey;
+        }
+      }
+
+      .rectangle .circle.three {
+        animation-name: three-animation;
+        animation-duration: 8s;
+        animation-delay: 2s;
+      }
+
+      @keyframes three-animation {
+        0% {
+          background-color: crimson;
+        }
+        50% {
+          background-color: crimson;
+        }
+        60% {
+          background-color: darkgrey;
+        }
+        100% {
+          background-color: darkgrey;
+        }
+      }
+
+      .rectangle .circle.four {
+        animation-name: four-animation;
+        animation-duration: 6s;
+        animation-delay: 3s;
+      }
+
+      @keyframes four-animation {
+        0% {
+          background-color: crimson;
+        }
+        50% {
+          background-color: crimson;
+        }
+        60% {
+          background-color: darkgrey;
+        }
+        100% {
+          background-color: darkgrey;
+        }
+      }
+
+      .rectangle .circle.five {
+        animation-name: five-animation;
+        animation-duration: 4s;
+        animation-delay: 4s;
+      }
+
+      @keyframes five-animation {
+        0% {
+          background-color: crimson;
+        }
+        50% {
+          background-color: crimson;
+        }
+        60% {
+          background-color: darkgrey;
+        }
+        100% {
+          background-color: darkgrey;
+        }
+      }
+
+      #car {
+        position: relative;
+        left: 0;
+        width: 150px;
+        animation-name: move-right;
+        animation-duration: 2.5s;
+        animation-delay: 6.5s;
+      }
+
+      @keyframes move-right {
+        from {
+          left: 0;
+        }
+        to {
+          left: calc(100% - 200px);
+        }
+      }
+
       @media (max-width: 2000px) {
         .container,
         .extra {
@@ -182,31 +372,28 @@
     </style>
   </head>
   <body>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-YDW77NJ24F"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-YDW77NJ24F");
-    </script>
     <nav>
       <ul>
         <li><img src="images/f1_logo.svg" alt="Formula 1" width="100" /></li>
         <li><a href="index.html">News</a></li>
-        <li><a href="History.html">History</a></li>
+        <li><a href="Driver-Profile.html">Driver Profile</a></li>
         <li><a href="2023-standings.html">2023 Championship Standings</a></li>
         <li><a href="2023-calendar.html">2023 Championship Calendar</a></li>
       </ul>
     </nav>
     <br />
-    <br />
+    <div class="rectangle">
+      <div class="circle one"></div>
+      <div class="circle two"></div>
+      <div class="circle three"></div>
+      <div class="circle four"></div>
+      <div class="circle five"></div>
+    </div>
+    <img
+      id="car"
+      src="images/formula-1-car-facing-right-svgrepo-com (1).svg"
+      alt=""
+    />
     <div class="container">
       <div class="item item-1"><strong>Latest News</strong></div>
       <div class="item item-2">
@@ -223,17 +410,18 @@
         /></a>
       </div>
       <div class="item item-4">
-        Saturday, February 25 <br /><br />Red Bull's Sergio Perez emerged as the
-        fastest driver during the pre-season testing for the 2023 Formula 1
-        World Championship at the Sakhir circuit in Bahrain. Perez achieved the
-        top time on the last of the three-day testing session, followed by Lewis
-        Hamilton for Mercedes and Valtteri Bottas for Alfa Romeo. Red Bull
-        Racing's Max Verstappen and Alfa Romeo's Zhou Guanyu were the other
-        drivers who topped the timesheets on the opening and second day of
-        testing, respectively. Mercedes rebounded from a slow second day with
-        the second-quickest time on the final day set by George Russell.
-        Fernando Alonso of Aston Martin AMR23 covered the most laps with a total
-        of 270.
+        <br /><br />
+        <span class="anim">Saturday, February 25</span><br /><br />Red Bull's
+        Sergio Perez emerged as the fastest driver during the pre-season testing
+        for the 2023 Formula 1 World Championship at the Sakhir circuit in
+        Bahrain. Perez achieved the top time on the last of the three-day
+        testing session, followed by Lewis Hamilton for Mercedes and Valtteri
+        Bottas for Alfa Romeo. Red Bull Racing's Max Verstappen and Alfa Romeo's
+        Zhou Guanyu were the other drivers who topped the timesheets on the
+        opening and second day of testing, respectively. Mercedes rebounded from
+        a slow second day with the second-quickest time on the final day set by
+        George Russell. Fernando Alonso of Aston Martin AMR23 covered the most
+        laps with a total of 270.
       </div>
       <div class="item item-5">Max Verstappen with RedBull</div>
       <div class="item item-6">
@@ -247,7 +435,8 @@
         /></a>
       </div>
       <div class="item item-7">
-        Friday, March 3 <br /><br />
+        <br /><br />
+        <span class="anim">Friday, March 3</span><br /><br />
         On Friday practice at Formula 1's 2023 Bahrain Grand Prix, Fernando
         Alonso and Aston Martin emerged as the quickest time in the opening
         practice, but Max Verstappen and Red Bull seem to be the favorites for
@@ -275,7 +464,8 @@
         /></a>
       </div>
       <div class="item item-10">
-        Friday, March 3 <br /><br />
+        <br /><br />
+        <span class="anim">Friday, March 3</span> <br /><br />
         Fernando Alonso set the fastest lap time of 1:30.907 in the second
         practice session ahead of the 2023 Bahrain Grand Prix, surprising
         spectators who did not expect his pace. Alonso's performance throughout
@@ -298,7 +488,8 @@
         /></a>
       </div>
       <div class="item item-13">
-        Sunday, March 5 <br />
+        <br /><br />
+        <span class="anim">Sunday, March 5</span> <br />
         <br />
         Charles Leclerc's hopes for a podium finish were dashed at the Bahrain
         Grand Prix as his Ferrari SF-23 suffered an engine-related issue that
@@ -321,7 +512,8 @@
         /></a>
       </div>
       <div class="item item-16">
-        Sunday, March 5 <br />
+        <br /><br />
+        <span class="anim">Sunday, March 5</span> <br />
         <br />
         Red Bull dominated the Bahrain Grand Prix to start their Formula One
         championship defence in emphatic style. Max Verstappen put a near
@@ -334,6 +526,25 @@
         team’s struggles, and McLaren's pre-race pessimism was justified.
       </div>
     </div>
+    <script>
+      const container = document.querySelector(".container");
+      const News = document.querySelector(".item-1");
+
+      container.addEventListener("mouseover", () => {
+        News.style.fontSize = "35px";
+        News.innerHTML = "Breaking News in Formula 1!";
+        News.style.color = "white";
+        News.style.backgroundColor = "black";
+      });
+
+      container.addEventListener("mouseout", () => {
+        News.style.fontSize = "";
+        News.innerHTML = "Latest News";
+        News.style.fontWeight = "bold";
+        News.style.color = "";
+        News.style.backgroundColor = "";
+      });
+    </script>
     <br />
     <div class="extra">
       <button><a class="button" href="form.html">Give Feed Back!</a></button>
