@@ -1,4 +1,4 @@
-let slideIndex = 0; // initialize slideIndex to 0
+let slideIndex = 0; 
 showSlides();
 
 function showSlides() {

@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="F1 Paddock Live brings you the latest news and updates from the 2023 Formula 1 World Championship." />
-    <meta name="keywords" content="F1, Formula 1, 2023, World Championship, News, Updates, Results, Drivers, Teams" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="F1 Paddock Live brings you the latest news and updates from the 2023 Formula 1 World Championship."
+    />
+    <meta
+      name="keywords"
+      content="F1, Formula 1, 2023, World Championship, News, Updates, Results, Drivers, Teams"
+    />
     <link rel="canonical" href="https://www.f1paddocklive.com/" />
     <link rel="shortcut icon" href="images/Formula1.png" />
     <title>F1 Paddock Live - form</title>
@@ -49,20 +55,20 @@
         a:hover {
           color: red;
         }
-        }
-        #f1-1 {
-          position: absolute;
-          left: 50%;
-          transform: translate(-50%);
-        }
-        .container {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-        form{
-            background-color: whitesmoke;
-        }
+      }
+      #f1-1 {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      form {
+        background-color: whitesmoke;
+      }
       @media (max-width: 2000px) {
         .container {
           margin-left: 5%;
@@ -91,120 +97,219 @@
         }
       }
     </style>
-</head>
-<body>
-  <!-- Google tag (gtag.js) -->
-  <script
-  async
-  src="https://www.googletagmanager.com/gtag/js?id=G-YDW77NJ24F"
-></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag("js", new Date());
+  </head>
+  <body>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-YDW77NJ24F"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag("config", "G-YDW77NJ24F");
-</script>
+      gtag("config", "G-YDW77NJ24F");
+    </script>
     <nav>
-        <ul>
-          <li><img src="images/f1_logo.svg" alt="Formula 1" width="100" /></li>
-          <li><a href="index.html">News</a></li>
-          <li><a href="Driver-Profile.html">Driver Profile</a></li>
-          <li><a href="2023-standings.html">2023 Championship Standings</a></li>
-          <li><a href="2023-calendar.html">2023 Championship Calendar</a></li>
-        </ul>
-      </nav>
-      <br>
-      <div class="container">
-    <form action="https://oim-apis.up.railway.app/form2" method="POST">
+      <ul>
+        <li><img src="images/f1_logo.svg" alt="Formula 1" width="100" /></li>
+        <li><a href="index.html">News</a></li>
+        <li><a href="Driver-Profile.html">Driver Profile</a></li>
+        <li><a href="2023-standings.html">2023 Championship Standings</a></li>
+        <li><a href="2023-calendar.html">2023 Championship Calendar</a></li>
+      </ul>
+    </nav>
+    <br />
+    <div class="container">
+      <form action="https://oim-apis.up.railway.app/form2" method="POST">
         <fieldset>
-            <legend> <strong>Your Information:</strong> </legend>
-            <br>
-            <div>
-                <label for="First-name">Name:</label>
-                <input type="text" name="First Name" id="First-name" placeholder="Enter your full name here...">
-            </div>
-            <br>
-            <div>
-                <label for="Email">Email:</label>
-                <input type="text" name="Email" id="Email" placeholder="Enter your email here...">
-            </div>
-            <br>
+          <legend><strong>Your Information:</strong></legend>
+          <br />
+          <div>
+            <label for="First-name">Name:</label>
+            <input
+              type="text"
+              name="First Name"
+              id="First-name"
+              placeholder="Enter your full name here..."
+            />
+          </div>
+          <br />
+          <div>
+            <label for="Email">Email:</label>
+            <input
+              type="text"
+              name="Email"
+              id="Email"
+              placeholder="Enter your email here..."
+            />
+          </div>
+          <br />
         </fieldset>
-        <br>
+        <br />
         <fieldset>
-            <legend> <strong>Your Thoughts:</strong> </legend>
-            <br>
-            <div>
-                <label for="fav-driver">Favorite Driver:</label>
-                <input list="driver-name" id="fav-driver" name="fav-driver">
+          <legend><strong>Your Thoughts:</strong></legend>
+          <br />
+          <div>
+            <label for="fav-driver">Favorite Driver:</label>
+            <input list="driver-name" id="fav-driver" name="fav-driver" />
 
-                <datalist id="driver-name">
-                    <option value="Max Verstappen">
-                    <option value="Sergio Perez">
-                    <option value="Charles Leclerc"> 
-                    <option value="Carlos Sainz">
-                    <option value="George Russel">
-                    <option value="Lewis Hamilton">
-                    <option value="Fernando Alonso">
-                    <option value="Esteban Ocon">
-                    <option value="Lando Norris">
-                    <option value="Oscar Piastri">
-                    <option value="Kevin Magnussen">
-                    <option value="Nico Hulkenberg">
-                    <option value="Yuki Tsunoda">
-                    <option value="Nyck De Vryes">
-                    <option value="Alex Albon">
-                    <option value="Logan Sargent">
-                    <option value="Valtteri Bottas">
-                    <option value="Zhou Guanyu">
-                    <option value="Pierre Gasly">
-                    <option value="Lance Stroll">
-                </datalist>
-            </div>
-            <br>
+            <datalist id="driver-name">
+              <option value="Max Verstappen"></option>
+              <option value="Sergio Perez"></option>
+              <option value="Charles Leclerc"></option>
+              <option value="Carlos Sainz"></option>
+              <option value="George Russel"></option>
+              <option value="Lewis Hamilton"></option>
+              <option value="Fernando Alonso"></option>
+              <option value="Esteban Ocon"></option>
+              <option value="Lando Norris"></option>
+              <option value="Oscar Piastri"></option>
+              <option value="Kevin Magnussen"></option>
+              <option value="Nico Hulkenberg"></option>
+              <option value="Yuki Tsunoda"></option>
+              <option value="Nyck De Vryes"></option>
+              <option value="Alex Albon"></option>
+              <option value="Logan Sargent"></option>
+              <option value="Valtteri Bottas"></option>
+              <option value="Zhou Guanyu"></option>
+              <option value="Pierre Gasly"></option>
+              <option value="Lance Stroll"></option>
+            </datalist>
+          </div>
+          <br />
+          <div>
+            <div id="text">What do you think of F1 Paddock?</div>
+
+            <label>
+              Great
+              <input type="radio" name="review" value="great" />
+            </label>
+            <label>
+              Good
+              <input type="radio" name="review" value="awesome" />
+            </label>
+            <label>
+              Bad
+              <input type="radio" name="review" value="good" />
+            </label>
+          </div>
+          <br />
+          <div>
             <div>
-                <div id="text">What do you think of F1 Paddock?</div> 
-                
-                <label>Great
-                    <input type="radio" name="review" value="great">
-                </label>
-                <label>Good
-                    <input type="radio" name="review" value="awesome">
-                </label>
-                <label>Bad
-                    <input type="radio" name="review" value="good">
-                </label>
-            </div>
-            <br>
-            <div>
-                <div>
-                    <label for="comments">What were your favorite sections of F1 Paddock? <br>Any suggestions?</label>
-                </div>
-                <div>
-                    <textarea 
-                        name="comments" 
-                        id="comments" 
-                        cols="25" 
-                        rows="5">
-                    </textarea>
-                </div>
+              <label for="comments"
+                >What were your favorite sections of F1 Paddock? <br />Any
+                suggestions?</label
+              >
             </div>
             <div>
-                <input type="checkbox" id="signup" name="updates" value="updates" checked>
-                <label for="signup">Automatic email updates</label>
+              <textarea
+                name="comments"
+                id="comments"
+                cols="25"
+                rows="5"
+              ></textarea>
             </div>
-            <br>
-            <div>
-                <input type="Submit" value="Submit">
-                <input type="Reset" value="Reset">
-            </div>
-      </div>
-      <br>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="signup"
+              name="updates"
+              value="updates"
+              checked
+            />
+            <label for="signup">Automatic email updates</label>
+          </div>
+          <br />
+          <div>
+            <input type="submit" value="Submit" onclick="saveData()" />
+            <input type="reset" value="Reset" />
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <script>
+      const form1 = document.querySelector("form");
+
+      form1.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const name = document.getElementById("First-name");
+        const driver = document.getElementById("fav-driver");
+        const review = document.querySelectorAll(
+          'input[name="review"]:checked'
+        );
+        const comments = document.getElementById("comments");
+
+        if (name.value === "") {
+          alert("Please enter your name.");
+          name.focus();
+          return false;
+        }
+
+        if (driver.value === "") {
+          alert("Please select your favorite driver.");
+          driver.focus();
+          return false;
+        }
+
+        if (review.length === 0) {
+          alert("Please select a review.");
+          return false;
+        }
+
+        if (comments.value === "") {
+          alert("Please enter your comments.");
+          comments.focus();
+          return false;
+        }
+
+        form1.submit();
+      });
+
+
+      const form = document.querySelector("form");
+
+      const nameInput = document.querySelector("#First-name");
+      const emailInput = document.querySelector("#Email");
+      const driverInput = document.querySelector("#fav-driver");
+      const reviewInputs = document.querySelectorAll('input[name="review"]');
+      const commentsInput = document.querySelector("#comments");
+      const updatesCheckbox = document.querySelector("#signup");
+
+      nameInput.value = localStorage.getItem("name");
+      emailInput.value = localStorage.getItem("email");
+      driverInput.value = localStorage.getItem("driver");
+      reviewInputs.forEach((input) => {
+        if (input.value === localStorage.getItem("review")) {
+          input.checked = true;
+        }
+      });
+      commentsInput.value = localStorage.getItem("comments");
+      updatesCheckbox.checked = JSON.parse(localStorage.getItem("updates"));
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        localStorage.setItem("name", nameInput.value);
+        localStorage.setItem("email", emailInput.value);
+        localStorage.setItem("driver", driverInput.value);
+        reviewInputs.forEach((input) => {
+          if (input.checked) {
+            localStorage.setItem("review", input.value);
+          }
+        });
+        localStorage.setItem("comments", commentsInput.value);
+        localStorage.setItem("updates", updatesCheckbox.checked);
+      });
+    </script>
+    <br />
     <img id="f1-1" src="images/f1_logo.svg" alt="" width="100" />
     <br />
     <br />
-</body>
+  </body>
 </html>
